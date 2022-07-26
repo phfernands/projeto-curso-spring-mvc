@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+	</head>
+	
+	<body>
+		<div th:each="pedido : ${pedidos}">
+			<div th:text="pedidos[0]">Nome do produto</div>
+			<div>Valor: <span>200,90</span></div>
+			<div>Data de entrega: <span>10/02/2022</span></div>
+			
+			<div>Produto</div>
+			<div>url do prduto</div>
+			
+			<div>Descrição</div>
+			<div>
+				<textarea>descrição do produto</textarea>
+			</div>
+			
+			<div>
+				<img src=""/>
+			</div>
+		</div>
+	</body>
+	
+</html>

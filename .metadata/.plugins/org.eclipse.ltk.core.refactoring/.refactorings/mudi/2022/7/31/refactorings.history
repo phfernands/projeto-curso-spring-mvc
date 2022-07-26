@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;request&apos; in &apos;br.com.alura.mvc.mudi.controller.HelloController.hello(...)&apos; to &apos;model&apos;&#x0D;&#x0A;- Original project: &apos;mudi&apos;&#x0D;&#x0A;- Original element: &apos;br.com.alura.mvc.mudi.controller.HelloController.hello(Model).request&apos;&#x0D;&#x0A;- Renamed element: &apos;request&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;request&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;br.com.alura.mvc.mudi.controller{HelloController.java[HelloController~hello~QModel;@request!338!350!344!350!QModel;!0!true" name="model" references="true" stamp="1658844406101" version="1.0"/>
+</session>
