@@ -1,0 +1,10 @@
+package br.com.alura.mvc.mudi.dto;
+
+public class RequisicaoNovoPedido {
+	
+	private String nomeProduto;
+	private String urlDoProduto;
+	private String urlImagem;
+	private String descricao;
+
+}
