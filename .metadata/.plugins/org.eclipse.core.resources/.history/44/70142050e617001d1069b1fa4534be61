@@ -1,0 +1,46 @@
+<html>
+	<head th:replace="~{base :: head}">
+	</head>
+	
+	<body onLoad="onLoad()">
+		<div th:replace="~{base :: logomarca}">
+		</div>
+		<div class="container">
+			<div th:replace="~{base :: titulo('Últimos Pedidos')}">
+			</div>
+		
+			<div class="card mb-3" th:each="pedido : ${pedidos}">
+				<div class="card-header alert alert-primary" th:text="${pedido.nomePedido}">Nome do Produto</div>
+				<div class="card-body">
+					<div class="row">
+						<div class="col-12 col-sm-8 mb-3">
+							<div class="row">
+								<div class="col-md-4">Valor: <span th:if="${pedido.preco} != null" th:text="${'R$ ' + #numbers.formatDecimal(pedido.preco,3,'POINT',2,'COMMA')}">200,90</span></div>
+								<div class="col-md-8">Data de entrega: <span th:text="${#temporals.format(pedido.dataEntrega, 'dd/MM/yyyy')}">10/02/2022</span></div>
+							</div>
+
+							<div>Produto</div>
+							<div><input class="form-control" th:value="${pedido.urlDoProduto}" value="url do produto"/></div>
+							
+							<div>Descrição</div>
+							<div>
+								<textarea class="form-control" th:text="${pedido.descricao}">descrição do produto</textarea>
+							</div>
+						</div>
+						<div class="col-12 col-sm-4">
+							<div>
+								<img class="img-thumbnail" th:src="${pedido.urlImagem}" src=""/>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			function onLoad() {
+				 
+			}
+		</script>
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	</body>
+</html>

@@ -1,3 +1,0 @@
-NotBlank.requisicaoNovoPedido.nomeProduto = O campo Nome do Produto é obrigatório.
-NotBlank.requisicaoNovoPedido.urlDoProduto = O campo Url é obrigatório.
-NotBlank.requisicaoNovoPedido.urlImagem = O campo Imagem do Produto é obrigatório.
